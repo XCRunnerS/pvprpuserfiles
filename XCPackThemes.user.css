@@ -3,16 +3,16 @@
 @namespace      nullrunners
 @author         XCRunnerS
 @description    `A Cleaner Download Experience for Texturepack Download Sites`
-@downloadURL  https://github.com/XCRunnerS/pvprpuserfiles/raw/main/XCPackThemes.user.css
-@updateURL    https://github.com/XCRunnerS/pvprpuserfiles/raw/main/XCPackThemes.user.css
-@version        1.1.1
+// @downloadURL  https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
+// @updateURL    https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
+@version        1.2.1
 @license        MIT
 ==/UserStyle== */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
 @-moz-document regexp("https?://www\\.mediafire\\.com/file/.*") {
-/* Mediafire (style + adblocking) */
+/* Mediafire (style + adblocking combined) */
 /* centers properly */
 .center {
     position: relative !important;
@@ -82,17 +82,10 @@
 	::-webkit-scrollbar-thumb:hover {background: #444444;}
 }
 
-@-moz-document regexp("https://pvprp.com/.*") {
-/* PVPRP (style + adblocking) */
-.dc, .wrap-a,.adsbygoogle, .adsbygoogle-noablate, iframe#ads, .google-auto-placed, .abox-wd, div[id=img-a], div[id= img-a2]{
-	display: none;
-	position:absolute;
-	opacity: 50%;
-	height: 0px;
-	width: 0px;
-	margin: 0px;	
-}
+@-moz-document regexp("https://pvprp.com/pack.*"), regexp("https://pvprp.com/"), regexp("https://pvprp.com/search.*") {
+/* PVPRP (style) */
 
+/* style section */
 .button, .step-number, .pack-step, .step-info-box, .in-grid, .gallery-image, .grid-banner, .aspect, .grid-banner-wrap, .menu-icons, .video-box{
 	border-radius: 0.8rem;
 }
@@ -109,5 +102,116 @@
 
 .pack-step, .step-info-box{
 	background: #0f0f0f;
+}
+.user-in-grid{
+	padding: 1em;
+	background: #0f0f0f;
+}
+
+.f-se{
+	padding: 1em;
+	background: #1e1e1e;
+	border-radius: 1em;
+	text-align: center;
+}
+
+.f-se.bold{
+	font-size: 1.25em;
+	background: #4C83E2;
+}
+.switch, .f-mc{
+	padding-bottom: .2em;
+}
+.f-mc.white{
+	padding: .5em;
+	margin: .1em;
+	margin-bottom: .5em;
+	background: #1e1e1e;
+	border-radius: .75em;
+	text-align: center;
+}
+
+.gray.increase-line{
+	text-align: center;
+}
+.f-se.gray:hover{
+	color: #4C83E2;
+	border: 1px solid #4C83E2;
+}
+.f-se.gray{border: 1px solid #1e1e1e;}
+
+.pack-tags{
+	border-radius: .5em;
+	padding: .425em;
+	padding-left: .65em;
+	padding-right: .65em;
+	background: #1e1e1e;
+	opacity: 100%;
+}
+
+.pages-num, div[p-n]{
+	border-radius: .3em;
+	margin: .15em;
+	background: #1e1e1e;
+	color: white;
+}
+.pages-num:hover, div[p-n]:hover, .selected-page{
+	background: #4C83E2;
+	transition: .1s;
+}
+}
+
+@-moz-document regexp("https://pvprp.com/pack.*") {
+/* PVPRP (adblock) */
+/* adblock section */
+.dc, .wrap-a,.adsbygoogle, .adsbygoogle-noablate, iframe#ads, .google-auto-placed, .abox-wd, div[id=img-a], div[id= img-a2]{
+	display: none;
+	position:absolute;
+	opacity: 50%;
+	height: 0px;
+	width: 0px;
+	margin: 0px;	
+}
+}
+
+@-moz-document url-prefix(""), regexp("https://pvprp.com/profile.*") {
+/* profile style on pvprp */
+.p-social-link, .p-social-icon, .p-social-text, .p-social, .p-actions,
+.p-twitch, .p-youtube, .p-instagram, .p-tiktok, .p-twitter
+{
+	width: auto;
+	display: inline-block;
+	margin-left: 1vh;
+    opacity: 1;
+	color: white !important;
+}
+
+.p-twitch:hover, .p-twitch, .p-social-text, .p-twitch .p-social-text,
+.p-twitter:hover, .p-twitter, .p-social-text, .p-twitter .p-social-text,
+.p-instagram:hover, .p-instagram, .p-social-text, .p-instagram .p-social-text,
+.p-youtube:hover, .p-youtube, .p-social-text, .p-youtube .p-social-text,
+.p-tiktok:hover, .p-tiktok, .p-social-text, .p-tiktok .p-social-text
+{
+	color: white !important;
+}
+.p-twitch:hover, .p-twitch .p-social-text:hover
+{
+	color: #9146FF !important; /* will need to change icon for p-icon twitch or smthn...*/
+}
+.p-instagram:hover, .p-instagram .p-social-text:hover
+{
+	color: #E4405F !important; /* will need to change icon for p-icon insta or smthn...*/
+}
+.p-twitter:hover, .p-twitter .p-social-text:hover
+{
+	color: #1DA1F2 !important; /* will need to change icon for p-icon twitter or smthn...*/
+}
+.p-youtube:hover, .p-youtube .p-social-text:hover
+{
+	color: #FF0000 !important; /* will need to change icon for p-icon yt or smthn...*/
+}
+.p-tiktok:hover, .p-tiktok .p-social-text:hover
+{
+	color: #25F4EE !important; /* will need to change icon for p-icon tiktok or smthn...*/
 }
 }
