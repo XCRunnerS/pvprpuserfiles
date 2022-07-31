@@ -7,8 +7,8 @@
 // @match        https://pvprp.com/*
 // @icon         https://avatars.githubusercontent.com/u/68029901
 // @grant        none
-// @downloadURL  https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
-// @updateURL    https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
+// @downloadURL  https://github.com/XCRunnerS/pvprpuserfiles/raw/main/XCRunnerSPackSiteUtls.user.js
+// @updateURL    https://github.com/XCRunnerS/pvprpuserfiles/raw/main/XCRunnerSPackSiteUtls.user.js
 // ==/UserScript==
 
 function autoUnlock() {
