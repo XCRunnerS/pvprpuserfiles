@@ -1,113 +1,42 @@
-/* ==UserStyle==
-@name           Pack Site Themes
-@namespace      nullrunners
-@author         XCRunnerS
-@description    `A Cleaner Download Experience for Texturepack Download Sites`
-// @downloadURL  https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
-// @updateURL    https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
-@version        1.1.1
-@license        MIT
-==/UserStyle== */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+# XCRunnerSPackSiteUtls
 
+This is a gist about reducing the amount of ads and data pvprp can collect on you.
 
-@-moz-document regexp("https?://www\\.mediafire\\.com/file/.*") {
-/* Mediafire (style + adblocking) */
-/* centers properly */
-.center {
-    position: relative !important;
-    width: 80%;
-    margin: auto;
-    height: auto;
-    padding: 2em;
-    background: #222222
-}
+## Site settings
 
-/* remove unnecessary stuff */
-#download-dark-screen, .nonDLContentWrap, .promo-dl-box .dlPromoContent, .promo-dl-box .dlInfo-Sidebar, .promo-dl-box .dlInfo-Body, iframe#ads, .DLExtraInfo-wrap, .socialContainerWrap, .dl-promo-cont, .header, .sidebar, .footer, footer, .DLMobile-upsellBox {
-	display: none !important;
-}	
+make sure pvprp has the following settings:
 
-.ads .dl-btn-cont{
-	font-size: 1.25rem;
-	background: #333333;
-}
-    
-.dl-info, .dl-info, .details, .description, .description-subheading, p, .description p, .filename, .filetype, .intro>div{
-    text-align: center;
-    margin: auto;
-    padding-top: 0.75rem;
-    align-items: center;
-    display: block;
-    width: 90%;
-    color: #cccccc;
-}
+chrome: click [here](chrome://settings/content/siteDetails?site=https%3A%2F%2Fpvprp.com)
 
-/* Background */
-.page, .nonDLContentWrap, .content {
-    background: #111111;
-    max-height: 100%;
-    font-family: 'Open Sans', sans-serif;
-}
-    .ads-normal .content, .ads-alternate .content{
-        min-height: 90vh;
-    }
+setting | value
+-|-
+location | block
+camera | block
+mic | block
+sensors | block
+**`javascript`** | `allow`* NEEDED
+**`images`** | `allow` * VERY IMPORTANT
+popups* | `block` *extra useful using my userscript
+ads* | block* this doesnt block most ads
 
-/* Font */
-.download_link, .download_link a, .download_link input, .download_link button, #authorize_dl_btn, .dl-btn-label{
-    font-size: 1.15rem;
-    font-family: 'Open Sans', sans-serif;
-}
-	/* Remove Secondary Icon */
-.intro.icon{
-	background: none;
-}
+## extensions/browsers
 
-/* Sets Radius for everything */    
-.center, .sidebar, .dl-btn-cont, .dl-box, .download_link, .download_link a, .download_link input, .download_link button, #authorize_dl_btn, .ads .dl-btn-cont
-{
-    border-radius: 2rem;
-}
-	*{
-		transition: 0.1s;
-	}
-/* Scrollbar */
-	/* width */
-	::-webkit-scrollbar {width: 12px;}
-	/* Track */
-	::-webkit-scrollbar-track {background: #222222;}
-	/* Handle */
-	::-webkit-scrollbar-thumb {background: #333333;}
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {background: #444444;}
-}
+### browsers
 
-@-moz-document regexp("https://pvprp.com/.*") {
-/* PVPRP (style + adblocking) */
-.dc, .wrap-a,.adsbygoogle, .adsbygoogle-noablate, iframe#ads, .google-auto-placed, .abox-wd, div[id=img-a], div[id= img-a2]{
-	display: none;
-	position:absolute;
-	opacity: 50%;
-	height: 0px;
-	width: 0px;
-	margin: 0px;	
-}
+as a basic guide, use [brave](https://brave.com/), [operagx](https://www.opera.com/gx), or [firefox](https://www.mozilla.org/en-US/firefox/new/)*(get an adblocker)
 
-.button, .step-number, .pack-step, .step-info-box, .in-grid, .gallery-image, .grid-banner, .aspect, .grid-banner-wrap, .menu-icons, .video-box{
-	border-radius: 0.8rem;
-}
+there are also some recommended `extensions` for these browsers;
 
-.pc-menu, .scrolled-menu{
-	border-radius: 0rem 0rem 1rem 1rem
-}
+extension + chrome link | description | firefox link
+-|-|-
+[Adguard](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg) | blocks a significant amount of ads, custom filters, HIGHLY recommended. | [firefox link](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/)
+[Ghostery](https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij) | slightly better adblock in terms of what isnt blocked | [firefox link](https://addons.mozilla.org/en-US/firefox/addon/ghostery/)
+ublock origin | I havent used this one | search
 
-.button:hover:not(.no-button-hover) {
-    transform: none;
-	transition: 0.1s;
-	background: #26d;
-}
+## Download XCRunnerSPackSiteUtls.user.js
 
-.pack-step, .step-info-box{
-	background: #0f0f0f;
-}
-}
+Using **[TAMPERMONKEY](https://www.tampermonkey.net/)** or similar required for `XCRunnerSPackSiteUtls.user.js` (once that is downloaded, click the download button)
+
+[DOWNLOAD THE SCRIPT](https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js)
+
+## Download 
