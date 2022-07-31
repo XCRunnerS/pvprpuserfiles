@@ -1,0 +1,113 @@
+/* ==UserStyle==
+@name           Pack Site Themes
+@namespace      nullrunners
+@author         XCRunnerS
+@description    `A Cleaner Download Experience for Texturepack Download Sites`
+// @downloadURL  https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
+// @updateURL    https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
+@version        1.1.1
+@license        MIT
+==/UserStyle== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+@-moz-document regexp("https?://www\\.mediafire\\.com/file/.*") {
+/* Mediafire (style + adblocking) */
+/* centers properly */
+.center {
+    position: relative !important;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 2em;
+    background: #222222
+}
+
+/* remove unnecessary stuff */
+#download-dark-screen, .nonDLContentWrap, .promo-dl-box .dlPromoContent, .promo-dl-box .dlInfo-Sidebar, .promo-dl-box .dlInfo-Body, iframe#ads, .DLExtraInfo-wrap, .socialContainerWrap, .dl-promo-cont, .header, .sidebar, .footer, footer, .DLMobile-upsellBox {
+	display: none !important;
+}	
+
+.ads .dl-btn-cont{
+	font-size: 1.25rem;
+	background: #333333;
+}
+    
+.dl-info, .dl-info, .details, .description, .description-subheading, p, .description p, .filename, .filetype, .intro>div{
+    text-align: center;
+    margin: auto;
+    padding-top: 0.75rem;
+    align-items: center;
+    display: block;
+    width: 90%;
+    color: #cccccc;
+}
+
+/* Background */
+.page, .nonDLContentWrap, .content {
+    background: #111111;
+    max-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+    .ads-normal .content, .ads-alternate .content{
+        min-height: 90vh;
+    }
+
+/* Font */
+.download_link, .download_link a, .download_link input, .download_link button, #authorize_dl_btn, .dl-btn-label{
+    font-size: 1.15rem;
+    font-family: 'Open Sans', sans-serif;
+}
+	/* Remove Secondary Icon */
+.intro.icon{
+	background: none;
+}
+
+/* Sets Radius for everything */    
+.center, .sidebar, .dl-btn-cont, .dl-box, .download_link, .download_link a, .download_link input, .download_link button, #authorize_dl_btn, .ads .dl-btn-cont
+{
+    border-radius: 2rem;
+}
+	*{
+		transition: 0.1s;
+	}
+/* Scrollbar */
+	/* width */
+	::-webkit-scrollbar {width: 12px;}
+	/* Track */
+	::-webkit-scrollbar-track {background: #222222;}
+	/* Handle */
+	::-webkit-scrollbar-thumb {background: #333333;}
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {background: #444444;}
+}
+
+@-moz-document regexp("https://pvprp.com/.*") {
+/* PVPRP (style + adblocking) */
+.dc, .wrap-a,.adsbygoogle, .adsbygoogle-noablate, iframe#ads, .google-auto-placed, .abox-wd, div[id=img-a], div[id= img-a2]{
+	display: none;
+	position:absolute;
+	opacity: 50%;
+	height: 0px;
+	width: 0px;
+	margin: 0px;	
+}
+
+.button, .step-number, .pack-step, .step-info-box, .in-grid, .gallery-image, .grid-banner, .aspect, .grid-banner-wrap, .menu-icons, .video-box{
+	border-radius: 0.8rem;
+}
+
+.pc-menu, .scrolled-menu{
+	border-radius: 0rem 0rem 1rem 1rem
+}
+
+.button:hover:not(.no-button-hover) {
+    transform: none;
+	transition: 0.1s;
+	background: #26d;
+}
+
+.pack-step, .step-info-box{
+	background: #0f0f0f;
+}
+}
