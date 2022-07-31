@@ -18,6 +18,8 @@ Using **[STYLUS](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeeba
 
 [DOWNLOAD USER CSS](https://github.com/XCRunnerS/pvprpuserfiles/raw/main/XCPackThemes.user.css)
 
-## Other Recommendations
+## Other INFO
 
-USE AN ADBLOCK IF YOUR BROWSER DOESNT HAVE ONE!
+- USE AN ADBLOCK IF YOUR BROWSER DOESNT HAVE ONE!
+- THIS IS FOR USER EXPERIENCE, and SPEED. I am glad PVPRP attempted to be a competitive alternative, however it has fallen short.
+- I will be making more tools like this for my own enjoyment.
