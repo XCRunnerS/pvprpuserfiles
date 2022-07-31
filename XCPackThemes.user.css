@@ -3,9 +3,9 @@
 @namespace      nullrunners
 @author         XCRunnerS
 @description    `A Cleaner Download Experience for Texturepack Download Sites`
-// @downloadURL  https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
-// @updateURL    https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
-@version        1.2.1
+@downloadURL  https://github.com/XCRunnerS/pvprpuserfiles/raw/main/XCPackThemes.user.css
+@updateURL    https://github.com/XCRunnerS/pvprpuserfiles/raw/main/XCPackThemes.user.css
+@version        1.2.2
 @license        MIT
 ==/UserStyle== */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
