@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         XCRunnerSPackSiteUtls
-// @namespace    XCRunnerSPackSiteUtls
+// @namespace    https://github.com/XCRunnerS/pvprpuserscript
 // @version      0.1.0
 // @description  no, I wont be clicking!
 // @author       XCRunnerS
 // @match        https://pvprp.com/*
 // @icon         https://avatars.githubusercontent.com/u/68029901
 // @grant        none
-// @downloadURL  temp
-// @updateURL    temp
+// @downloadURL  https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
+// @updateURL    https://github.com/XCRunnerS/pvprpuserscript/raw/main/XCRunnerSPackSiteUtls.user.js
 // ==/UserScript==
 
 function autoUnlock() {
